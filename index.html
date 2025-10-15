@@ -1,20 +1,416 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rayan Mostofa — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Rayan Mostofa — Computer Science student & data engineer. Portfolio including projects: Paxos KV DB, MapReduce framework, N-words predictor, Instagram Clone." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Rayan Mostofa</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <head>
-        <title>Onyx Testing</title>
-        <link rel="stylesheet" href="/static/style.css">
-        <meta charset="UTF-8">        
-    </head>
-    <body>
-    <h1>Onyx Draft for Schedule</h1>
-    <a href='https://youtube.com'>Youtube</a>
-    
-    </body>
+  <main>
+    <!-- HERO / ABOUT (landing) -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Rayan Mostofa</h1>
+          <p class="subtitle">Computer Science student • Data Engineer • Distributed systems & ML enthusiast</p>
+          <div class="contact-row">
+            <a href="mailto:mostofar@umich.edu">mostofar@umich.edu</a>
+            <span>• Canton, MI</span>
+          </div>
+          <p class="intro narrow">
+            I'm a senior Computer Science student at the University of Michigan (Dec 2025). I enjoy building
+            reliable distributed systems, designing data pipelines, and applying machine learning to real problems.
+            Recently I worked on cloud migrations, ETL automation with PySpark, and implemented consensus-based systems
+            in Go. I love teaching peers, producing reproducible code, and shipping projects that make data usable.
+          </p>
+          <p class="narrow">
+            Outside of work, I like open-source, speedrunning logic puzzles, and photography — I often combine those
+            interests by taking technical project screenshots and producing short writeups or demos.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#resume">View Resume</a>
+          </div>
+        </div>
 
+        <div class="hero-right">
+          <!-- Stylized AI-avatar SVG placeholder (replace with your avatar or image) -->
+          <figure class="avatar" aria-hidden="true">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" class="avatar-svg">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1">
+                  <stop offset="0" stop-color="#4DB6AC"/>
+                  <stop offset="1" stop-color="#1976D2"/>
+                </linearGradient>
+              </defs>
+              <rect rx="20" width="200" height="200" fill="url(#g1)"></rect>
+              <g fill="#fff" transform="translate(35,40)">
+                <circle cx="65" cy="30" r="25" opacity="0.95"/>
+                <rect x="10" y="72" width="110" height="56" rx="14" opacity="0.95"/>
+              </g>
+              <text x="100" y="190" font-size="10" text-anchor="middle" fill="#ffffff" opacity="0.85">Replace with screenshot/avatar</text>
+            </svg>
+          </figure>
 
+          <p class="avatar-caption">Avatar / placeholder — replace with an AI avatar or a project screenshot.</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- ABOUT (expanded) -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="two-col">
+          <div>
+            <h3>Professional interests</h3>
+            <p class="narrow justify">
+              My primary interests lie at the intersection of distributed systems and data engineering. I enjoy designing
+              robust data pipelines, reasoning about consistency and fault tolerance, and translating complex ETL flows
+              into repeatable, testable code. I have hands-on experience with PySpark & Databricks, SQL Server migrations,
+              Paxos consensus, and building backend APIs with Python & Go.
+            </p>
 
+            <h3>Teaching & mentorship</h3>
+            <p class="narrow justify">
+              As a teaching assistant for the School of Information, I explain data structures and debugging strategies,
+              design assignments and unit tests, and help students deliver end-to-end analysis projects. I love turning
+              complex technical ideas into approachable lessons.
+            </p>
+          </div>
 
+          <div>
+            <h3>Personal interests</h3>
+            <p class="narrow justify">
+              Outside of engineering I enjoy puzzle-solving, lightweight photography, hiking, and experimenting with small
+              side projects that combine UX with code. I value clarity, reproducibility, and thoughtful automation.
+            </p>
 
+            <h3>Quick facts</h3>
+            <ul class="facts">
+              <li>University of Michigan — B.S.E. Computer Science (Dec 2025)</li>
+              <li>GPA: 3.41 / 4.00</li>
+              <li>Languages: Python, SQL, Golang, Java, JavaScript, C/C++</li>
+              <li>Tools: Spark/PySpark, Databricks, Azure ADLS Gen2, Git, Datastage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME (natively formatted) -->
+    <section id="resume" class="section resume-section">
+      <div class="container">
+        <h2>Resume</h2>
+
+        <article class="resume-card narrow">
+          <header class="resume-header">
+            <div>
+              <h3>Rayan Mostofa</h3>
+              <p class="muted">Computer Science • University of Michigan — Dec 2025</p>
+            </div>
+            <div class="resume-contact">
+              <a href="mailto:mostofar@umich.edu">mostofar@umich.edu</a>
+              <p class="muted">Canton, MI</p>
+            </div>
+          </header>
+
+          <section>
+            <h4>Education</h4>
+            <p class="justify">University of Michigan, Ann Arbor — Bachelor of Science in Engineering, Computer Science (Dec 2025). GPA: 3.41/4.00</p>
+            <p class="muted">Selected coursework: Database Management Systems, Data Mining, Machine Learning, Distributed Systems, Data Structures & Algorithms.</p>
+          </section>
+
+          <section>
+            <h4>Work Experience</h4>
+
+            <div class="job">
+              <h5>Data Engineer Intern — General Motors Financial (GMF), Detroit, MI</h5>
+              <p class="muted">May 2025 – Aug 2025</p>
+              <ul>
+                <li>Designed and engineered a configurable pipeline to auto-generate Databricks notebooks for cloud migration from on-prem SQL Server, saving 3–8 hours per interface; parsers convert XML to SQL and PySpark ETL templates.</li>
+                <li>Used Databricks SDK APIs to orchestrate workflows and generate notebooks; implemented 46 of 115 ODS interfaces to the cloud (Bronze→Silver transformations).</li>
+                <li>Engineered rejection logic in Databricks to handle invalid source records; collaborated on an Agile Kanban team.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <h5>Teaching Assistant — Data Oriented Programming, University of Michigan - School of Information</h5>
+              <p class="muted">Aug 2024 – Present</p>
+              <ul>
+                <li>Taught data structures (Python), debugging & testing, and use of Git/auto-grading. Consulted students for end-to-end projects and developed assignments with unit tests.</li>
+                <li>Configured course git org for autograding: created CLI helpers, Python unittests, and YAML for GitHub Actions auto-graders.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h4>Projects (selected)</h4>
+            <ul>
+              <li><a href="#project-paxos" class="project-link">Paxos Based Sharded Key/Value Database</a> — Go; Paxos consensus; supports concurrent Put/Get/Append.</li>
+              <li><a href="#project-mapreduce" class="project-link">MapReduce Framework</a> — Python; cluster-executed MapReduce inspired by Google paper; uses OS concurrency + TCP/UDP networking.</li>
+              <li><a href="#project-nwords" class="project-link">N-words Predictor</a> — TensorFlow LSTM & preprocessing; Streamlit demo for next-word prediction.</li>
+              <li><a href="#project-ig" class="project-link">Instagram Clone</a> — Full-stack: Flask backend, React frontend, deployed on AWS EC2.</li>
+            </ul>
+            <p class="muted">Links: each project in the portfolio section below has a "View details" button and placeholder screenshots — replace with real screenshots and GitHub links.</p>
+          </section>
+
+          <section>
+            <h4>Skills</h4>
+            <div class="skill-grid">
+              <div><strong>Languages</strong><br/>Python, Golang, Java, JavaScript, C/C++, SQL, Bash</div>
+              <div><strong>Data & Tools</strong><br/>Spark/PySpark, Databricks, ADLS Gen2, Datastage, Pandas, Numpy, JDBC</div>
+              <div><strong>Other</strong><br/>Git, Regex, Unix, XML, REST APIs</div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <p class="narrow justify">
+          Below are selected projects that showcase systems design, distributed algorithms, data engineering, and full-stack skills.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Project card 1 -->
+          <article id="project-paxos" class="project-card">
+            <div class="project-media">
+              <!-- Placeholder image to replace with screenshot -->
+              <svg class="screenshot" viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Paxos project screenshot placeholder">
+                <rect width="600" height="360" rx="8" fill="#F4F8FB"></rect>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="18" fill="#9aa7b2">Paxos KV DB — screenshot placeholder</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Paxos Based Sharded Key/Value Database</h3>
+              <p class="muted">Golang • Paxos • Fault-tolerant ordering</p>
+              <p class="justify narrow">
+                Implemented a sharded key/value store supporting concurrent Put/Get/Append from clients. Used the Paxos protocol
+                to achieve consensus on operation ordering and to tolerate server failures and unreliable networks.
+              </p>
+              <div class="project-actions">
+                <a class="btn small" href="#project-paxos" onclick="openModal('m-paxos');return false;">View details</a>
+                <a class="btn small ghost" href="#projects">Open repo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project card 2 -->
+          <article id="project-mapreduce" class="project-card">
+            <div class="project-media">
+              <svg class="screenshot" viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MapReduce project screenshot placeholder">
+                <rect width="600" height="360" rx="8" fill="#F4F8FB"></rect>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="18" fill="#9aa7b2">MapReduce Framework — screenshot placeholder</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>MapReduce Framework</h3>
+              <p class="muted">Python • Distributed processing • Networking</p>
+              <p class="justify narrow">
+                Built a MapReduce runtime inspired by the original Google paper. The framework runs jobs across worker processes
+                using OS-level concurrency (threads/processes) and communicates with TCP/UDP to distribute & collect results.
+              </p>
+              <div class="project-actions">
+                <a class="btn small" href="#project-mapreduce" onclick="openModal('m-mapreduce');return false;">View details</a>
+                <a class="btn small ghost" href="#projects">Open repo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project card 3 -->
+          <article id="project-nwords" class="project-card">
+            <div class="project-media">
+              <svg class="screenshot" viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="N-words Predictor placeholder">
+                <rect width="600" height="360" rx="8" fill="#F4F8FB"></rect>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="18" fill="#9aa7b2">N-words Predictor — screenshot placeholder</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>N-words Predictor</h3>
+              <p class="muted">TensorFlow • LSTM • Streamlit demo</p>
+              <p class="justify narrow">
+                Built an n-word sequence predictor using LSTM RNNs. Preprocessed large text datasets using regex and produced a small web demo using Streamlit.
+              </p>
+              <div class="project-actions">
+                <a class="btn small" href="#project-nwords" onclick="openModal('m-nwords');return false;">View details</a>
+                <a class="btn small ghost" href="#projects">Open demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bonus project (Instagram clone) -->
+          <article id="project-ig" class="project-card">
+            <div class="project-media">
+              <svg class="screenshot" viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Instagram clone placeholder">
+                <rect width="600" height="360" rx="8" fill="#F4F8FB"></rect>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="18" fill="#9aa7b2">Instagram Clone — screenshot placeholder</text>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Instagram Clone</h3>
+              <p class="muted">Flask • React • AWS EC2</p>
+              <p class="justify narrow">
+                Full-stack prototype with image sharing, likes, comments, and basic auth. Backend in Flask, frontend in React; deployed to AWS EC2.
+              </p>
+              <div class="project-actions">
+                <a class="btn small" href="#project-ig" onclick="openModal('m-ig');return false;">View details</a>
+                <a class="btn small ghost" href="#projects">Open repo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p class="justify">
+          I'm available for internships and entry-level roles starting December 2025. If you'd like to connect about
+          distributed systems, data engineering, or possible collaborations, email me: <a href="mailto:mostofar@umich.edu">mostofar@umich.edu</a>.
+        </p>
+        <p class="muted">Links: <a href="#" aria-label="GitHub link placeholder">GitHub</a> • <a href="#" aria-label="LinkedIn link placeholder">LinkedIn</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Rayan Mostofa — Built with HTML & CSS • Replace placeholder images with screenshots before submitting.</small>
+    </div>
+  </footer>
+
+  <!-- Project detail modals (simple accessible modals) -->
+  <div id="m-paxos" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m-paxos-title">
+    <div class="modal-dialog">
+      <button class="modal-close" aria-label="Close" onclick="closeModal('m-paxos')">×</button>
+      <h3 id="m-paxos-title">Paxos Based Sharded Key/Value Database</h3>
+      <p class="muted">Golang • Paxos consensus • Distributed systems</p>
+      <div class="modal-content">
+        <p class="justify">
+          Implemented a sharded key/value service that tolerates server crashes and unreliable networking by utilizing the
+          Paxos algorithm for ordering operations. The system supports Put, Get, and Append operations concurrently from clients.
+        </p>
+        <ul>
+          <li>Engineered leader election & replicated log ordering using Paxos rounds.</li>
+          <li>Implemented client-side retries and idempotency checks for safe replays.</li>
+          <li>Tested with simulated network partitions and node restarts; measured latency and throughput under failure scenarios.</li>
+          <li>Key files: proposer.go, acceptor.go, kvstore.go, client.go</li>
+        </ul>
+        <p class="muted">Replace this section with real performance charts and a link to the GitHub repo / design doc.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="m-mapreduce" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m-mapreduce-title">
+    <div class="modal-dialog">
+      <button class="modal-close" aria-label="Close" onclick="closeModal('m-mapreduce')">×</button>
+      <h3 id="m-mapreduce-title">MapReduce Framework</h3>
+      <p class="muted">Python • Concurrency • Networking</p>
+      <div class="modal-content">
+        <p class="justify">
+          A lightweight MapReduce runtime that spawns worker processes or threads to execute map and reduce tasks, coordinates shuffle
+          via TCP/UDP, and stores intermediate results to disk. The implementation demonstrates practical considerations for fault tolerance,
+          task retries, and worker coordination.
+        </p>
+        <ul>
+          <li>Provided examples: wordcount, inverted index, URL frequency.</li>
+          <li>Used OS concurrency primitives and plain sockets for inter-worker communication.</li>
+          <li>Includes build/run instructions and test harness scripts.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="m-nwords" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m-nwords-title">
+    <div class="modal-dialog">
+      <button class="modal-close" aria-label="Close" onclick="closeModal('m-nwords')">×</button>
+      <h3 id="m-nwords-title">N-words Predictor</h3>
+      <p class="muted">TensorFlow • LSTM • Streamlit</p>
+      <div class="modal-content">
+        <p class="justify">
+          Trained an LSTM to predict the next n words after given input sequences. Includes preprocessing pipeline (tokenization, regex-based cleaning),
+          training logs, and a Streamlit demo that accepts text and shows predicted continuations.
+        </p>
+        <ul>
+          <li>Data: cleaned public-domain text corpora (preprocessed locally).</li>
+          <li>Model: LSTM with embedding layers, trained with teacher forcing and early stopping.</li>
+          <li>Demo: small Streamlit app hosted locally or via streamlit cloud (replace with deployed demo link).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="m-ig" class="modal" aria-hidden="true" role="dialog" aria-labelledby="m-ig-title">
+    <div class="modal-dialog">
+      <button class="modal-close" aria-label="Close" onclick="closeModal('m-ig')">×</button>
+      <h3 id="m-ig-title">Instagram Clone</h3>
+      <p class="muted">Flask • React • AWS</p>
+      <div class="modal-content">
+        <p class="justify">
+          A prototype social feed with image uploads, likes, comments, and simple auth. Backend was a Flask REST API with SQLite for local demos
+          (or PostgreSQL for deployments). Frontend is React and uses fetch to communicate with the API.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Smooth nav scrolling (simple)
+    document.querySelectorAll('.main-nav a').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Modal helpers
+    function openModal(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.setAttribute('aria-hidden', 'false');
+      el.classList.add('open');
+      document.body.classList.add('modal-open');
+    }
+    function closeModal(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.setAttribute('aria-hidden', 'true');
+      el.classList.remove('open');
+      document.body.classList.remove('modal-open');
+    }
+    // Close modals on ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal.open').forEach(m => {
+          m.setAttribute('aria-hidden','true');
+          m.classList.remove('open');
+        });
+        document.body.classList.remove('modal-open');
+      }
+    });
+  </script>
+</body>
 </html>
