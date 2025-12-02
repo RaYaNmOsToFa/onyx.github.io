@@ -92,73 +92,79 @@
     </section>
 
     <!-- RESUME (natively formatted) -->
-    <section id="resume" class="section resume-section">
-      <div class="container">
-        <h2>Resume</h2>
+<section id="resume" class="section resume-section">
+  <div class="container">
+    <h2>Resume</h2>
 
-        <article class="resume-card narrow">
-          <header class="resume-header">
-            <div>
-              <h3>Rayan Mostofa</h3>
-              <p class="muted">Computer Science • University of Michigan — Dec 2025</p>
-            </div>
-            <div class="resume-contact">
-              <a href="mailto:mostofar@umich.edu">mostofar@umich.edu</a>
-              <p class="muted">Canton, MI</p>
-            </div>
-          </header>
+    <article class="resume-natural">
+      <header class="resume-header-natural">
+        <div>
+          <h3>Rayan Mostofa</h3>
+          <p class="muted">Computer Science • University of Michigan — Dec 2025</p>
+        </div>
+        <div class="resume-contact">
+          <a href="mailto:mostofar@umich.edu">mostofar@umich.edu</a>
+          <p class="muted">Canton, MI</p>
+        </div>
+      </header>
 
-          <section>
-            <h4>Education</h4>
-            <p class="justify">University of Michigan, Ann Arbor — Bachelor of Science in Engineering, Computer Science (Dec 2025). GPA: 3.41/4.00</p>
-            <p class="muted">Selected coursework: Database Management Systems, Data Mining, Machine Learning, Distributed Systems, Data Structures & Algorithms.</p>
-          </section>
+      <section>
+        <h4>Education</h4>
+        <p class="justify">
+          University of Michigan, Ann Arbor — Bachelor of Science in Engineering, Computer Science (Dec 2025).
+          GPA: 3.41/4.00
+        </p>
+        <p class="muted">
+          Coursework: Database Management Systems, Data Mining, Machine Learning,
+          Distributed Systems, Data Structures & Algorithms.
+        </p>
+      </section>
 
-          <section>
-            <h4>Work Experience</h4>
+      <section>
+        <h4>Work Experience</h4>
 
-            <div class="job">
-              <h5>Data Engineer Intern — General Motors Financial (GMF), Detroit, MI</h5>
-              <p class="muted">May 2025 – Aug 2025</p>
-              <ul>
-                <li>Designed and engineered a configurable pipeline to auto-generate Databricks notebooks for cloud migration from on-prem SQL Server, saving 3–8 hours per interface; parsers convert XML to SQL and PySpark ETL templates.</li>
-                <li>Used Databricks SDK APIs to orchestrate workflows and generate notebooks; implemented 46 of 115 ODS interfaces to the cloud (Bronze→Silver transformations).</li>
-                <li>Engineered rejection logic in Databricks to handle invalid source records; collaborated on an Agile Kanban team.</li>
-              </ul>
-            </div>
+        <div class="job">
+          <h5>Data Engineer Intern — General Motors Financial (GMF), Detroit, MI</h5>
+          <p class="muted">May 2025 – Aug 2025</p>
+          <ul>
+            <li>Built a configurable pipeline to auto-generate migration-ready Databricks notebooks, reducing effort by 3–8 hours per interface.</li>
+            <li>Leveraged Databricks SDK APIs to orchestrate workflows and deploy 46 ODS interfaces (Bronze→Silver).</li>
+            <li>Designed robust rejection logic to handle malformed source data in ETL pipelines.</li>
+          </ul>
+        </div>
 
-            <div class="job">
-              <h5>Teaching Assistant — Data Oriented Programming, University of Michigan - School of Information</h5>
-              <p class="muted">Aug 2024 – Present</p>
-              <ul>
-                <li>Taught data structures (Python), debugging & testing, and use of Git/auto-grading. Consulted students for end-to-end projects and developed assignments with unit tests.</li>
-                <li>Configured course git org for autograding: created CLI helpers, Python unittests, and YAML for GitHub Actions auto-graders.</li>
-              </ul>
-            </div>
-          </section>
+        <div class="job">
+          <h5>Teaching Assistant — Data Oriented Programming, University of Michigan</h5>
+          <p class="muted">Aug 2024 – Present</p>
+          <ul>
+            <li>Taught data structures, debugging/testing, and Git workflows to 100+ students.</li>
+            <li>Designed assignments, Python unittest suites, and GitHub Actions autograders.</li>
+          </ul>
+        </div>
+      </section>
 
-          <section>
-            <h4>Projects (selected)</h4>
-            <ul>
-              <li><a href="#project-paxos" class="project-link">Paxos Based Sharded Key/Value Database</a> — Go; Paxos consensus; supports concurrent Put/Get/Append.</li>
-              <li><a href="#project-mapreduce" class="project-link">MapReduce Framework</a> — Python; cluster-executed MapReduce inspired by Google paper; uses OS concurrency + TCP/UDP networking.</li>
-              <li><a href="#project-nwords" class="project-link">N-words Predictor</a> — TensorFlow LSTM & preprocessing; Streamlit demo for next-word prediction.</li>
-              <li><a href="#project-ig" class="project-link">Instagram Clone</a> — Full-stack: Flask backend, React frontend, deployed on AWS EC2.</li>
-            </ul>
-            <p class="muted">Links: each project in the portfolio section below has a "View details" button and placeholder screenshots — replace with real screenshots and GitHub links.</p>
-          </section>
+      <section>
+        <h4>Skills</h4>
+        <div class="skill-grid">
+          <div><strong>Languages</strong><br/>Python, Go, Java, JavaScript, C/C++, SQL, Bash</div>
+          <div><strong>Data & Tools</strong><br/>Spark/PySpark, Databricks, ADLS Gen2, Pandas, Datastage</div>
+          <div><strong>Other</strong><br/>Git, Regex, Unix, XML, REST APIs</div>
+        </div>
+      </section>
 
-          <section>
-            <h4>Skills</h4>
-            <div class="skill-grid">
-              <div><strong>Languages</strong><br/>Python, Golang, Java, JavaScript, C/C++, SQL, Bash</div>
-              <div><strong>Data & Tools</strong><br/>Spark/PySpark, Databricks, ADLS Gen2, Datastage, Pandas, Numpy, JDBC</div>
-              <div><strong>Other</strong><br/>Git, Regex, Unix, XML, REST APIs</div>
-            </div>
-          </section>
-        </article>
-      </div>
-    </section>
+      <section>
+        <h4>Projects (selected)</h4>
+        <ul>
+          <li><a href="#project-paxos">Paxos Based Sharded Key/Value Database</a> — Go; Paxos consensus; concurrent Put/Get/Append.</li>
+          <li><a href="#project-mapreduce">MapReduce Framework</a> — Python; OS concurrency + TCP/UDP networking.</li>
+          <li><a href="#project-nwords">N-words Predictor</a> — TensorFlow LSTM + Streamlit demo.</li>
+          <li><a href="#project-ig">Instagram Clone</a> — Flask backend, React frontend, AWS EC2.</li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</section>
+
 
     <!-- PROJECTS -->
     <section id="projects" class="section projects-section">
