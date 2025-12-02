@@ -161,3 +161,47 @@ h2{font-size:1.4rem;margin-bottom:10px}
 
 /* Utility */
 .justify{ text-align:justify; }
+
+
+/* Resume section smoother, lighter, matches site layout */
+.resume-natural {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.resume-header-natural {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.resume-header-natural h3 {
+  margin-bottom: 0.25rem;
+}
+
+.resume-natural section {
+  margin-bottom: 2rem;
+}
+
+.resume-natural h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.resume-natural ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.job h5 {
+  margin-bottom: 0.25rem;
+}
