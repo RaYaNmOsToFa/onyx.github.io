@@ -2,7 +2,7 @@
 
 *A lightweight distributed MapReduce framework in Python*
 
-<img width="700" height="200" alt="image" src="https://github.com/user-attachments/assets/cd61e349-bf36-44de-ae27-c0ba0c85543a" />
+<img width="700" height="200" alt="image" src="/elephant.png" />
 
 ---
 
@@ -34,7 +34,7 @@ Think of it like sorting and summarizing a massive library's worth of books (lik
 
 ---
 
-## About the Project {#about-the-project}
+## About the Project
 **P4 - MapReduce** is a simple, educational implementation of the MapReduce paradigm written in Python.
 It simulates a distributed computing environment, where:
 
@@ -45,7 +45,7 @@ This project is designed for students, researchers, or developers who want to un
 
 ---
 
-## Architecture {#architecture}
+## Architecture 
 
 **Components:**
 - **Manager**: Receives a job, splits data into chunks, assigns tasks to workers, and collects results.
@@ -61,7 +61,7 @@ This project is designed for students, researchers, or developers who want to un
 
 ---
 
-## Features {#features}
+## Features 
 - Distributed job execution using socket-based communication
 - Parallel processing of tasks across multiple worker nodes
 - Custom user-defined `map()` and `reduce()` functions
@@ -70,7 +70,7 @@ This project is designed for students, researchers, or developers who want to un
 
 ---
 
-## Quickstart / Installation {#quickstart--installation}
+## Quickstart / Installation 
 
 ### 1. Clone and install
 ```bash
@@ -97,7 +97,7 @@ python3 submit.py -h <host> -p <port> -i <input_directory> -o <output_directory>
 python3 submit.py --shutdown
 ```
 
-## Usage Examples {#usage-examples}
+## Usage Examples 
 A classic example for MapReduce is Word Count. The goal is to count the frequency of every word in a large set of text files.
 
 Sample Input
@@ -163,8 +163,8 @@ sat, 1
 the, 2
 ```
 
-## Architecture Diagram {#architecture-Diagram}
-<img width="1551" height="710" alt="image" src="https://github.com/user-attachments/assets/065bc230-6c68-4b00-a3e0-2cdac793dbf3" />
+## Architecture Diagram 
+<img width="1551" height="710" alt="image" src="/arch.png" />
 
 ## FAQ {#faq}
 Q: Does this require multiple physical machines? A: No — you can run multiple worker processes on a single machine for simulation (you must have available ports however).
