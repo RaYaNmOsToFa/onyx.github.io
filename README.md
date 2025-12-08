@@ -6,7 +6,7 @@
 
 ---
 
-## 💡 TLDR: What is MapReduce? {#tldr}
+## TLDR: What is MapReduce?
 
 MapReduce is a simple, powerful concept for processing **huge amounts of data** by breaking the task into many small, manageable pieces and solving them simultaneously across many computers.
 
@@ -21,16 +21,16 @@ Think of it like sorting and summarizing a massive library's worth of books (lik
 ---
 
 ## 📖 Table of Contents
-- [About the Project](#about-the-project)
-- [💡 TLDR: What is MapReduce?](#tldr)
-- [Architecture](#architecture)
-- [Features](#features)
-- [Quickstart / Installation](#quickstart--installation)
-- [Usage Examples](#usage-examples)
-- [Architecture-Diagram](#architecture-Diagram)
-- [FAQ](#faq)
-- [Contributing](#contributing)
-- [License](#license)
+- [About the Project](##about-the-project)
+- [💡 TLDR: What is MapReduce?](##tldr)
+- [Architecture](##architecture)
+- [Features](##features)
+- [Quickstart / Installation](##quickstart--installation)
+- [Usage Examples](##usage-examples)
+- [Architecture-Diagram](##architecture-Diagram)
+- [FAQ](##faq)
+- [Contributing](##contributing)
+- [License](##license)
 
 ---
 
@@ -166,17 +166,17 @@ the, 2
 ## Architecture Diagram 
 <img width="1551" height="710" alt="image" src="/arch.png" />
 
-## FAQ {#faq}
+## FAQ 
 Q: Does this require multiple physical machines? A: No — you can run multiple worker processes on a single machine for simulation (you must have available ports however).
 
 Q: Is this production-ready? A: No — this is an educational project meant for learning distributed systems principles.
 
 Q: Can I add more workers dynamically? A: Yes — new workers can connect to the manager while it’s running (and manager can tell when workers die as well).
 
-## Contributing {#contributing}
+## Contributing 
 Things are kind of done around here. Please don't cheat...
 
-## License {#license}
+## License 
 There is no license... Please follow the EECS honor code...
 
 
